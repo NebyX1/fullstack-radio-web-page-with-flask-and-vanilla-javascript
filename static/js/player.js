@@ -1,4 +1,4 @@
-const audio = new Audio('http://usa15.ciudaddigital.com.uy:8040/FederalFM');
+const audio = new Audio('/stream_proxy');
 
 const playButton = document.getElementById('playButton');
 const playIcon = playButton.querySelector('i');
