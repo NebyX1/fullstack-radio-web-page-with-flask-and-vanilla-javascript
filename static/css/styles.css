@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;    
+}
+
+.nav-footer-color{
+    background-color: #E06469;
+}
+
+.link-font{
+    font-family: 'Indie Flower', cursive !important;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.nav-icon-effect {
+    transition: all 0.3s ease-in-out;
+    color: white !important;
+}
+
+.nav-icon-effect:hover {
+    transform: scale(1.05);
+    color: #DEDEA7 !important;  /* Este es un tono de amarillo claro */
+}
+
+.logo-effect {
+    transition: all 0.3s ease-in-out;
+}
+
+.logo-effect:hover {
+    transform: rotate(-5deg);
+}
+
+.neby-font{
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+    text-decoration: none !important;
+}
+
+.bg-header{
+    background-image:url("./static/header/header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.header-text {
+    color: white;
+    text-align: center;
+    font-size: 3.5vw;  /* Utilizamos vw (viewport width) para que el tamaño de la fuente sea responsive */
+}
+
+.bg-player {
+    background-color: #BE5A83;
+  }
+  
+  audio {
+    height: 10vh;
+    min-width: 10vh;
+  }
+
+  .play-pause-button {
+    background-color: #DEDEA7;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.play-pause-button:hover {
+    background-color: #F2B6A0;
+}
+
+.play-pause-button i {
+    font-size: 24px;
+    color: white;
+}
+
+.text-player-responsive {
+    font-size: 20px; /* Tamaño base para pantallas grandes */
+  }
+  
+  @media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas */
+    .text-player-responsive {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Estilos para pantallas extra pequeñas */
+    .text-player-responsive {
+      font-size: 10px;
+    }
+  }
+
+/*! Este es el código del Banner */
+.banner-container {
+  position: relative;
+  height: 20vh;
+  width: 50vh;
+  overflow: hidden;
+  opacity: 1;
+}
+
+.banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.banner-image.active {
+  opacity: 1;
+}
+/*! Este es el código del Banner */
+
+.heading-size{
+  background-color: #E06469; 
+  height: 80px;
+}
+
+.headings-font{
+  font-family: 'Indie Flower', cursive !important;
+}
+
+
+/*! Este es el css de nuestra grilla de programación */
+.table-hover tbody tr:hover {
+  background-color: #F2B6A0;  /* Color de hover */
+}
+
+th {
+  background-color: #8D455E;  /* Color del título de la tabla */
+  color: white;  /* Color del texto del título */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #E06469;  /* Color para las filas impares */
+}
+/*! Este es el css de nuestra grilla de programación */

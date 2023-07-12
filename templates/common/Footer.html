@@ -1,0 +1,30 @@
+<footer class="text-center text-lg-start nav-footer-color p-3">
+
+    <div class="row">
+
+        {# Este div contiene el logo de Federal FM #}
+        <div class="col-md-12 col-lg-4 text-center m-auto">
+            <img class="logo-effect" src="{{ url_for('static', filename='logo/logo.png') }}" alt="Federal FM Logo" width="300" height="150">
+        </div>
+        
+        {# Este div contiene la info de copyright y de desarrollador #}
+        <div class="col-md-12 col-lg-4 text-center p-3 m-auto">
+            <p class="text-white"> © {{ now.strftime('%Y') }} Federal FM 99.1 </p>
+            <a class="text-white" href="https://github.com/NebyX1">Made By:</a> 
+            <a class="text-white neby-font nav-icon-effect" href="https://github.com/NebyX1">&nbsp <span>Neby_X</span></a>
+        </div>
+
+        {# Este div contiene la infor de Contacto y legal #}
+        <div class="col-md-12 col-lg-4 text-center m-auto">
+            <div>
+                <p class="text-white" style="font-size: 14px"> <span> <i class="fa-solid fa-house"></i> </span> Treinta Y Tres 632 - Minas - Lavalleja - Uruguay</p>
+                <p class="text-white" style="font-size: 14px"> <span> <i class="fa-solid fa-phone"></i> </span> Estudio: (+598) 4442 4873 - Comercial: (+598) 4442 4001</p>
+            </div>
+            <div class="ps-5 px-5">
+                <p class="text-white" style="font-size: 10px"> En cumplimiento con lo establecido por el artículo 93 inciso 2° de la Ley 19.307, comunicamos que Federal FM es una radiodifusora propiedad de Multiuser S.A. cuyos titulares son Carlos E. Falco - Pablo D. Falco - Hector M. Falco. </p>
+            </div>
+        </div>
+
+    </div>
+
+</footer>

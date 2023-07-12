@@ -1,0 +1,62 @@
+{% extends 'layout.html' %} 
+
+{% block title %} | Contacto{% endblock %}
+
+{% block content %}
+
+  <div class="d-flex flex-column flex-md-row h-100 align-items-center justify-content-center">
+    <div class="col-12 col-md-9 p-3 text-center">
+      <div class="headings-font mb-2 mt-2">
+        <h1 class="display-2" style="color: #8D455E;">Contacto</h1>
+      </div>
+
+      <div class="mt-5">
+        <div class="mb-2 heading-size d-flex align-items-center justify-content-center">
+          <h2 class="ms-2 headings-font text-white">Datos de Contacto:</h2>
+        </div>
+        <p style="color: #8D455E;">
+          Treinta Y Tres 632 - Minas - Lavalleja - Uruguay<br>
+          Estudio: (+598) 4442 4873 - Comercial: (+598) 4442 4001
+        </p>
+      </div>
+      
+      <div class="mt-5">
+        <div class="mb-2 heading-size d-flex align-items-center justify-content-center">
+          <h2 class="ms-2 headings-font text-white">Envíanos un mensaje:</h2>
+        </div>
+        <a href="https://wa.me/59844424873?text=Hola%20Federal%20FM" target="_blank">
+          <img src="https://img.icons8.com/color/96/000000/whatsapp.png" style="border-radius: 50%; background-color: #25D366;"/>
+        </a>
+      </div>
+
+      <div class="mt-5">
+        <div class="mb-2 heading-size d-flex align-items-center justify-content-center">
+            <h2 class="ms-2 headings-font text-white">Visitanos:</h2>
+          </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13171.83484156868!2d-55.2376163!3d-34.3769704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x950aba3007f780eb%3A0x81d7377933d0ef82!2sFederal%20Fm%2099.1!5e0!3m2!1ses-419!2suy!4v1689146771996!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="mt-5">
+        <div class="heading-size d-flex align-items-center justify-content-center">
+          <h2 class="ms-2 headings-font text-white">Envíanos un mail:</h2>
+        </div>
+        <form id="contactForm" class="mt-3">
+          <div class="mb-3">
+            <input type="text" class="form-control" id="name" placeholder="Nombre">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="email" placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="subject" placeholder="Asunto">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="message" rows="3" style="resize: none;" placeholder="Mensaje"></textarea>
+          </div>
+          <button type="submit" class="btn" style="background-color: #E06469; color: white;">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
