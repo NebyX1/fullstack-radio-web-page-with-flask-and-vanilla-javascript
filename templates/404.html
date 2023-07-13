@@ -1,0 +1,13 @@
+{% extends 'layout.html' %} 
+
+{% block title %} | 404 No Disponible{% endblock %}
+
+{% block content %}
+<div class="container d-flex flex-column justify-content-center" style="min-height:75vh;">
+<div class="headings-font mb-4 mt-2">
+    <h1 class="display-1" style="color: #8D455E;">😔 404</h1>
+</div>
+<p style="color: #8D455E;" class="display-6">Lo sentimos, pero parece ser que la página que buscas no se encuentra o no existe. 🙈</p>
+<p style="color: #8D455E;"><a href="{{ url_for('index') }}">Vuelve al inicio</a></p>
+</div>
+{% endblock %}

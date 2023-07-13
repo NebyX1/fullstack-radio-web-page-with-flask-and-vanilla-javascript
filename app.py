@@ -34,6 +34,11 @@ def grid():
 def contact():
     return render_template('contact.html')
 
+# Esta ruta nos permite manejar los errores de tipo 404
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
 # Esto nos permite ejecutar en modo debug el servidor de Flask mediante el comando "python app.py"
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
